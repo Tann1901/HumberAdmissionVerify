@@ -1,4 +1,4 @@
-# HumberAdmissionVerify
+### HumberAdmissionVerify
 ```
 public class HumberCollege {
 
@@ -66,9 +66,10 @@ public class Admission extends AdmissionEntity {
 				if (pass.length() < 10) {
 					System.out.println("Invalid password! Your length is less than 10 characters!");
 				}
+				
 ```
-				####Check if pass length > 10
-				```
+### Check if pass length > 10
+```
         if (pass.length() >= 10) {
 					int uppercount = 0;
 					int numcount = 0;
@@ -216,6 +217,7 @@ public class Admission extends AdmissionEntity {
 		
 		double[] gpaCal = new double[marksOfStudents.length];
 ```
+
 ### Declaring the credit of all the subjects
 		```
     int maths_credit = 4, science_credit = 5, language_credit = 4, 
@@ -223,7 +225,7 @@ public class Admission extends AdmissionEntity {
 		
 		int totalCreditMarks = maths_credit + science_credit + language_credit + drama_credit + music_credit + biology_credit;
 		```
-#### This will calculate the GPA according the formula provided
+### This will calculate the GPA according the formula provided
 		```
     for (int i = 0; i < marksOfStudents.length; i++) {
 			gpaCal[i] = ((marksOfStudents[i][0] * maths_credit) + (marksOfStudents[i][1] * science_credit) + (marksOfStudents[i][2] * language_credit)
