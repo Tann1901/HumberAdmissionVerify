@@ -15,7 +15,7 @@ public class HumberCollege {
 		report.getReport4(admission.getGpa(), admission.getStudentsSchoolName());	
 	}
 ```
-###Print welcome message
+### Print welcome message
 ```	
   private static void displayWelcome() {
 		System.out.println(" Welcome in Humber College \n");
@@ -47,7 +47,7 @@ public class Admission extends AdmissionEntity {
 		}
 	}
 ```
-###Validate user login
+### Validate user login
 ```	
   private static boolean userlogin(Scanner scan) {
 		boolean loginSuccessful = false;
@@ -216,14 +216,14 @@ public class Admission extends AdmissionEntity {
 		
 		double[] gpaCal = new double[marksOfStudents.length];
 ```
-	#### declaring the credit of all the subjects
+### Declaring the credit of all the subjects
 		```
     int maths_credit = 4, science_credit = 5, language_credit = 4, 
 				drama_credit = 3, music_credit = 2, biology_credit = 4;
 		
 		int totalCreditMarks = maths_credit + science_credit + language_credit + drama_credit + music_credit + biology_credit;
 		```
-	#### this will calculate the GPA according the formula provided
+#### This will calculate the GPA according the formula provided
 		```
     for (int i = 0; i < marksOfStudents.length; i++) {
 			gpaCal[i] = ((marksOfStudents[i][0] * maths_credit) + (marksOfStudents[i][1] * science_credit) + (marksOfStudents[i][2] * language_credit)
@@ -237,7 +237,7 @@ public class Admission extends AdmissionEntity {
 		double[] gpa = getGpa();
 		String[] schoolNamesOfStudents = new String[gpa.length];
 		```
-		####Check which school the student will be assigned
+### Check which school the student will be assigned
 		```
     for (int i = 0; i < gpa.length; i++) {
 			if (gpa[i] >= 90 && gpa[i] <= 100) {
