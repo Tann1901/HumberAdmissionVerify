@@ -219,14 +219,14 @@ public class Admission extends AdmissionEntity {
 ```
 
 ### Declaring the credit of all the subjects
-		```
+```
     int maths_credit = 4, science_credit = 5, language_credit = 4, 
 				drama_credit = 3, music_credit = 2, biology_credit = 4;
 		
 		int totalCreditMarks = maths_credit + science_credit + language_credit + drama_credit + music_credit + biology_credit;
-		```
+```
 ### This will calculate the GPA according the formula provided
-		```
+```
     for (int i = 0; i < marksOfStudents.length; i++) {
 			gpaCal[i] = ((marksOfStudents[i][0] * maths_credit) + (marksOfStudents[i][1] * science_credit) + (marksOfStudents[i][2] * language_credit)
 					+ (marksOfStudents[i][3] * drama_credit) + (marksOfStudents[i][4] * music_credit) + (marksOfStudents[i][5] * biology_credit))
@@ -238,9 +238,9 @@ public class Admission extends AdmissionEntity {
 	private void assignStudentsToSchool() {
 		double[] gpa = getGpa();
 		String[] schoolNamesOfStudents = new String[gpa.length];
-		```
+```
 ### Check which school the student will be assigned
-		```
+```
     for (int i = 0; i < gpa.length; i++) {
 			if (gpa[i] >= 90 && gpa[i] <= 100) {
 				schoolNamesOfStudents[i] = "School of Engineering";
