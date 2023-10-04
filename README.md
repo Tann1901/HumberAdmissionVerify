@@ -9,12 +9,15 @@ Writing Java code for an admission process for a college (Humber College) along 
 After that, reports are generated including:
 
 Report 1: Displays school assignments for each student.
+
 Report 2: Shows the total number of students accepted in each school.
+
 Report 3: Displays the number of students not accepted.
+
 Report 4: Provides the average GPA for each school.
 
 ### UML Diagram
-![image](https://github.com/Tann1901/HumberAdmissionVerify/assets/108020327/062b3842-8cf8-4d26-877c-ca981d9819bc)
+![image](https://github.com/Tann1901/HumberAdmissionVerify/assets/108020327/99ce4c42-eb60-4ad3-99a1-723275eb003c)
 
 ### HumberAdmissionVerify
 ```
